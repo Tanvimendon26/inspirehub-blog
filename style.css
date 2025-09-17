@@ -1,3 +1,5 @@
+
+
 /* Reset */
 * {
   margin: 0;
@@ -290,3 +292,39 @@ body.dark .blog-card {
   background: #1e1e1e;
   color: #ddd;
 }
+  
+/* Undo message popup (non-invasive) */
+.undo-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(34,34,34,0.95);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  z-index: 2000;
+  font-size: 14px;
+  display: none;
+}
+.undo-message button {
+  margin-left: 12px;
+  background: #ffb74d;
+  color: #111;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Delete button: styles chosen to match your theme but scoped to .blog-card */
+.blog-card .delete-btn {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.blog-card .delete-btn:hover { background: #c82333; }
